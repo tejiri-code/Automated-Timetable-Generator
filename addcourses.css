@@ -60,21 +60,37 @@ display: flex;}
     @media (max-width: 600px) {
         .top1 {
           padding: 5px;
-        }
-  
-        .welcome {
           font-size: 20px;
         }
   
+        .welcome {
+          margin-left: 10px;
+          margin-top: 10px;
+        }
+  
         .top {
+          margin-left: 10px;
           font-size: 16px;
         }
   
         .come {
+          margin-left: 10px;
           font-size: 14px;
         }
   
         .bod {
           margin: 10px auto;
+        }
+  
+        h2 input {
+          width: 80px;
+          padding: 5px;
+          font-size: 0.8em;
+        }
+  
+        button {
+          height: 40px;
+          width: 150px;
+          font-size: 8px;
         }
       }
