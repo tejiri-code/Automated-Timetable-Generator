@@ -8,35 +8,45 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        /* CSS styles here */
+        /* CSS styles */
+
+        /* ... */
+
     </style>
     <script>
-        function upgradeBrowser() {
-            var browserMessage = document.getElementById('browser-message');
-            browserMessage.innerHTML = 'You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.';
-        }
+        // JavaScript code
+        document.addEventListener('DOMContentLoaded', function() {
+            var loginButton = document.getElementById('loginButton');
+            var signupButton = document.getElementById('signupButton');
 
-        window.onload = function() {
-            var browserMessage = document.getElementById('browser-message');
-            if (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > -1) {
-                browserMessage.style.display = 'block';
-                upgradeBrowser();
-            }
-        };
+            // Add click event listener to the Login button
+            loginButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                // Perform login logic or redirect to the login page
+                window.location.href = 'signin2.html';
+            });
+
+            // Add click event listener to the Signup button
+            signupButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                // Perform signup logic or redirect to the signup page
+                window.location.href = 'signup.html';
+            });
+        });
     </script>
 </head>
 <body>
     <div class="container">
         <!--[if lt IE 7]>
-        <div id="browser-message" class="browsehappy">
-            <!-- JavaScript code will update this message -->
-        
+        <div class="browsehappy">
+            You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.
+        </div>
         <![endif]-->
         <h1>ATG</h1>
         <h3>Automatic Time-Table Generator</h3>
 
-        <a class="btn" href="signin2.html">Login</a>
-        <a class="btn" href="signup.html">Signup</a>
+        <a id="loginButton" class="btn" href="#">Login</a>
+        <a id="signupButton" class="btn" href="#">Signup</a>
     </div>
 </body>
 </html>
