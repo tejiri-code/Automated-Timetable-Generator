@@ -67,3 +67,21 @@ tr:nth-child(2n) {
         transform: translateY(0);
     }
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    table {
+        font-size: 10px;
+    }
+}
