@@ -39,9 +39,11 @@ font-weight: bold;
     flex-direction: column;
     gap: 35px;
     border-radius: 15px;
-    background: #e3e3e3;
+    background: #fff;
     box-shadow: 16px 16px 32px #c8c8c8,
         -16px -16px 32px #fefefe;
+        border: #000 solid 2px;
+        text-decoration: none;
 }
 
 .inputBox {
@@ -114,7 +116,10 @@ button {
     letter-spacing: 2px;
 }
 
+button a{text-decoration: none;
+    color: #000;}
 button:hover {
     background-color: #000;
-    color:#fff;
+    color: #fff;
 }
+button a:hover{ color: #fff;}

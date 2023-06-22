@@ -49,9 +49,11 @@ margin-left: 200px;
     flex-direction: column;
     gap: 35px;
     border-radius: 15px;
-    background: #646060;
+    background: #fff;
     box-shadow: 16px 16px 32px #c8c8c8,
         -16px -16px 32px #fefefe;
+        border: #000 solid 2px;
+        text-decoration: none;
 }
 
 .inputBox {
@@ -122,9 +124,12 @@ button {
     font-size: 10px;
     letter-spacing: 2px;
     color: #000;
+    
 }
-
+button a{text-decoration: none;
+    color: #000;}
 button:hover {
     background-color: #000;
     color: #fff;
 }
+button a:hover{color:#fff}

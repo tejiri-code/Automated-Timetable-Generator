@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <style>
-        
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ATG - Automatic Time-Table Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* CSS styles here */
+    </style>
+    <script>
+        function upgradeBrowser() {
+            var browserMessage = document.getElementById('browser-message');
+            browserMessage.innerHTML = 'You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.';
+        }
 
-        </style>
-    </head>
-    <body>
+        window.onload = function() {
+            var browserMessage = document.getElementById('browser-message');
+            if (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > -1) {
+                browserMessage.style.display = 'block';
+                upgradeBrowser();
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
         <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <center>
-        <h1>ATG</h1>
-        <h3>Automatic Time-Table generator</h3>
-
-        <a href="/signin">Login</a>
-
-        <a href="/signup">Signup</a>
-
-        </center>
+        <div id="browser-message" class="browsehappy">
+            <!-- JavaScript code will update this message -->
         
+        <![endif]-->
+        <h1>ATG</h1>
+        <h3>Automatic Time-Table Generator</h3>
 
-    </body>
+        <a class="btn" href="signin2.html">Login</a>
+        <a class="btn" href="signup.html">Signup</a>
+    </div>
+</body>
 </html>

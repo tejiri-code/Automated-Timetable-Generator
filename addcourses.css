@@ -46,9 +46,14 @@ display: flex;}
         text-transform: uppercase;
         font-size: 10px;
         letter-spacing: 2px;
+        color: #000;
     }
-    
+    button a{text-decoration: none;
+        color:#000
+    }
     button:hover {
         background-color: #000;
         color: white;
     }
+    button a:hover{
+    color: #fff;}
