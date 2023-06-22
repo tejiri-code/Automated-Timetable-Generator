@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>signup</title>
+        <link rel="stylesheet" href="signup.css">
+        <script>
+            //     var elts = document.getElementsByClassName('test')
+            //  Array.from(elts).forEach(function(elt){
+            //    elt.addEventListener("keyup", function(event) {
+            //      // Number 13 is the "Enter" key on the keyboard
+            //      if (event.keyCode === 13 || elt.value.length == 8) {
+            //        // Focus on the next sibling
+            //        elt.nextElementSibling.focus()
+            //      }
+            //    });
+            //  })
+            // document.querySelectorAll('input').forEach( el => {
+            //         console.log(el)
+            //         el.addEventListener('keydown', e => {
+            //             console.log(e.keyCode);
+            //             if(e.keyCode === 13) {
+            //                 let nextEl = el.nextElementSibling;
+            //                 console.log(nextEl)
+            //                 if(nextEl.nodeName === 'INPUT') {
+            //                     nextEl.focus();
+            //                 }else {
+            //                     alert('done');
+            //                 }
+            //             }
+            //         })
+            //     })
+        
+            function tabE(obj,e){ 
+           var e=(typeof event!='undefined')?window.event:e;// IE : Moz 
+           if(e.keyCode==13){ 
+             var ele = document.forms[0].elements; 
+             for(var i=0;i<ele.length;i++){ 
+               var q=(i==ele.length-1)?0:i+1;// if last element : if any other 
+               if(obj==ele[i]){ele[q].focus();break} 
+             } 
+          return false; 
+           } 
+          } 
+                </script>
+    </head>
+    <body>
+       
+        <center>
+        <form METHOD="POST">
+            <div class="top1">hj</div>
+            <div class="banner">
+            <div class="top"><h2>SIGN UP </h2></div>
+            <div class="top2"><a href="/signin2.html">SIGN IN</a></div>
+               <div class="top3"><a href="/contactus.html">CONTACT US</a></div>
+            </div>
+        
+        <form action="/signup" method="post">
+            <div class="container">
+                <div class="card">
+                <div class="inputBox" >
+           
+            <input type="text" required="required" class="test" id="0"  onkeypress="return tabE(this,event)" name="fname">
+            <span> First Name: </span>
+        </div>
+
+        <div class="inputBox">
+           
+            <input type="text" required="required" class="test" id="0"  onkeypress="return tabE(this,event)" name="sname">
+            <span>Second Name: </span>
+        </div>
+
+        <div class="inputBox">
+           
+            <input type="text" required="required" class="test" id="0"  onkeypress="return tabE(this,event)" name="username">
+            <span>Username: </span>
+        </div>
+
+        <div class="inputBox">
+            
+            <input type="password" required="required" class="test" id="0"  onkeypress="return tabE(this,event)" name="password">
+            <span> Password: </span>
+        </div>
+            <button type="submit"><a href="signin2.html">sign up</a></button> 
+        
+            </div>
+            </div>
+        </form>
+
+         
+          </center>
+    </body>
+
+
+
+</html>

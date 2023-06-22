@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="addcourses.css">
+
+</head>
+<body>
+  <script>
+    //     var elts = document.getElementsByClassName('test')
+    //  Array.from(elts).forEach(function(elt){
+    //    elt.addEventListener("keyup", function(event) {
+    //      // Number 13 is the "Enter" key on the keyboard
+    //      if (event.keyCode === 13 || elt.value.length == 8) {
+    //        // Focus on the next sibling
+    //        elt.nextElementSibling.focus()
+    //      }
+    //    });
+    //  })
+    // document.querySelectorAll('input').forEach( el => {
+    //         console.log(el)
+    //         el.addEventListener('keydown', e => {
+    //             console.log(e.keyCode);
+    //             if(e.keyCode === 13) {
+    //                 let nextEl = el.nextElementSibling;
+    //                 console.log(nextEl)
+    //                 if(nextEl.nodeName === 'INPUT') {
+    //                     nextEl.focus();
+    //                 }else {
+    //                     alert('done');
+    //                 }
+    //             }
+    //         })
+    //     })
+
+    function tabE(obj,e){ 
+   var e=(typeof event!='undefined')?window.event:e;// IE : Moz 
+   if(e.keyCode==13){ 
+     var ele = document.forms[0].elements; 
+     for(var i=0;i<ele.length;i++){ 
+       var q=(i==ele.length-1)?0:i+1;// if last element : if any other 
+       if(obj==ele[i]){ele[q].focus();break} 
+     } 
+  return false; 
+   } 
+  } 
+        </script>
+ <style>
+  body{
+    background-color : #e3e3e3;
+margin: 0;}
+
+    .bod{height: 600px;}
+    .welcome{margin-left: 20px;
+    margin-top: 20px;}
+    .top{ margin-left: 320px;
+            color: #fff;
+            margin-top: 20px;}
+        .top1{ font-family:'Times New Roman', Times, serif;
+            text-decoration: none;
+        height: 50px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+    font-size: 25px;
+display: flex;}
+.come{margin-left: 400px;
+    margin-top: 20px;}
+    h2 input {
+        width: 100px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        color: #000;
+        font-size: 1em;
+        background: transparent;
+        border-left: 2px solid #000;
+        border-bottom: 2px solid #000;
+        border-top: 2px solid #000;
+        border-right: 2px solid #000;
+        transition: 0.1s;
+        border-radius: 10px;
+        height: 10px;
+    }
+    button {
+        height: 45px;
+        width: 200px;
+        border-radius: 5px;
+        border: 2px solid #000;
+        cursor: pointer;
+        background-color: transparent;
+        transition: 0.5s;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+    
+    button:hover {
+        background-color: #000;
+        color: white;
+    }
+ </style>
+  <div class="top1">
+    <div class="welcome">
+      Welcome Onboard
+    </div>
+  <div class="top">COURSE SELECTION</div>
+  <div class="come">
+    {{fname}}
+  </div>
+  <div><img src="info-circle.svg"></div>
+</div>
+    <form action="/addCourses" method="post">
+      <div class="bod">
+
+      <center>
+<h2>Course-1-code: <input type="text" class="test" id="0" maxlength="8" onkeypress="return tabE(this,event)" name="course 1"></h2>
+
+<h2>Course-2-code: <input type="text" class="test" id="1" maxlength="8" onkeypress="return tabE(this,event)" name="course 2"></h2>
+
+<h2>Course-3-code: <input type="text" class="test" id="2" maxlength="8" onkeypress="return tabE(this,event)" name="course 3"></h2>
+
+<h2>Course-4-code: <input type="text" class="test" id="3" maxlength="8" onkeypress="return tabE(this,event)" name="course 4"></h2>
+
+<h2>Course-5-code: <input type="text" class="test" id="4" maxlength="8" onkeypress="return tabE(this,event)" name="course 5"></h2>
+
+<h2>Course-6-code: <input type="text" class="test" id="5" maxlength="8" onkeypress="return tabE(this,event)" name="course 6"></h2>
+
+<h2>Course-7-code: <input type="text" class="test" id="6" maxlength="8" onkeypress="return tabE(this,event)" name="course 7"></h2>
+
+<h2>Course-8-code: <input type="text" class="test" id="7" maxlength="8" onkeypress="return tabE(this,event)" name="course 8"></h2>
+
+<h2>Course-9-code: <input type="text" class="test" id="8" maxlength="8" onkeypress="return tabE(this,event)" name="course 9"></h2>
+    </form>
+<button type="submit"> <a href="addRooms.html">Append Courses & Proceed</a></button>
+</div>
+</center>
+</body>
+</html>
