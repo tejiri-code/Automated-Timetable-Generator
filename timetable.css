@@ -1,41 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-       
-       *{
-            border-radius: 5px;
-            text-align: center;
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
+}
 
-        }
-            .top h2{margin-left: 600px;}
-            .top{ font-family:'Times New Roman', Times, serif;
-                text-decoration: none;
-            height: 5px;
-            color: #fff;
-            text-align: left;
-            font-weight: bold;
-            display: flex;
-            text-align: center;
-            }
-            .top2{
-            margin-left: 900px;
-            }.top2 a{color: rgb(0, 0, 0);
-                margin-left: 200px;
-                text-decoration: none;}
-                .top3 a{color: rgb(0, 0, 0);
-                    margin-left: 10px;
-                    text-decoration: none;}
-        thead{
-            min-height: 600px;
-            width: 350px;
-            flex-direction: column;
-            gap: 35px;
-            border-radius: 15px;
-            background: #2c2929;
-           color: aliceblue;
+.top {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    animation: fade-in 1s;
+}
 
-            font-weight: bold;
+.top a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    font-weight: bold;
+}
 
-            font-size: large;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    animation: slide-up 1s;
+}
 
-        }  
+th {
+    background-color: #333;
+    padding: 10px;
+    font-weight: bold;
+    color: #fff;
+}
 
-      
+td {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+}
+
+tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
