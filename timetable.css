@@ -84,4 +84,8 @@ tr:nth-child(2n) {
     table {
         font-size: 10px;
     }
+    th,
+    td {
+        padding: 2px;
+    }
 }
