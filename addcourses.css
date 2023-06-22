@@ -57,3 +57,24 @@ display: flex;}
     }
     button a:hover{
     color: #fff;}
+    @media (max-width: 600px) {
+        .top1 {
+          padding: 5px;
+        }
+  
+        .welcome {
+          font-size: 20px;
+        }
+  
+        .top {
+          font-size: 16px;
+        }
+  
+        .come {
+          font-size: 14px;
+        }
+  
+        .bod {
+          margin: 10px auto;
+        }
+      }
